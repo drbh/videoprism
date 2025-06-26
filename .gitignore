@@ -1,0 +1,6 @@
+*.mp4
+*.npz
+.bak
+__pycache__
+videoprism.egg-info
+videoprism_public_v1_base.safetensors

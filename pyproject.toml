@@ -1,0 +1,33 @@
+[project]
+name = "videoprism"
+version = "0.1.0"
+description = "the video prism model"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "absl-py",
+    "einops",
+    "einshape",
+    "flax",
+    "sentencepiece",
+    "tensorflow",
+    # "videoprism"
+    "mediapy>=1.2.4",
+    "ipdb>=0.13.13",
+    "scikit-learn>=1.7.0",
+    "safetensors>=0.5.3",
+    "torch>=2.7.1",
+]
+
+[tool.uv.sources]
+tensorflow = { url = "https://storage.googleapis.com/tensorflow/versions/2.19.0/tensorflow-2.19.0-cp312-cp312-macosx_12_0_arm64.whl" }
+
+# TODO: revisit 
+# videoprism = { path = "./videoprism", editable = true }
+
+# FOR NOW JUST USE
+# uv pip install -e .
+
+# also wihtout a accelerator you may need
+# export JAX_PLATFORMS=cpu
